@@ -91,6 +91,22 @@
 
             label = "ASPAS_DUPLA";
         };
+
+        layer: layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&mo 1 &kp F14>, <&macro_release>;
+
+            label = "LAYER";
+        };
+
+        layer2: layer2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&mo 2 &kp F15>, <&macro_release>;
+
+            label = "LAYER2";
+        };
     };
 };
 
@@ -100,10 +116,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE        &kp Q         &kp W         &kp E                 &kp R  &kp T  &kp Y      &kp U          &kp I         &kp O       &kp P          &kp BACKSPACE
-&kp TAB           &kp A         &kp S         &kp D                 &kp F  &kp G  &kp H      &kp J          &kp K         &kp L       &kp SEMICOLON  &kp KP_SLASH
-&kp LEFT_CONTROL  &kp Z         &kp X         &kp C                 &kp V  &kp B  &kp N      &kp M          &kp COMMA     &kp DOT     &kp SLASH      &interrogacao
-&kp PRINTSCREEN   &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &mo 1  &mo 2  &kp ENTER  &kp RIGHT_ALT  &kp CAPSLOCK  &kp DELETE
+&kp ESCAPE        &kp Q         &kp W         &kp E                 &kp R   &kp T  &kp Y      &kp U          &kp I         &kp O       &kp P          &kp BACKSPACE
+&kp TAB           &kp A         &kp S         &kp D                 &kp F   &kp G  &kp H      &kp J          &kp K         &kp L       &kp SEMICOLON  &kp KP_SLASH
+&kp LEFT_CONTROL  &kp Z         &kp X         &kp C                 &kp V   &kp B  &kp N      &kp M          &kp COMMA     &kp DOT     &kp SLASH      &interrogacao
+&kp PRINTSCREEN   &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &layer  &mo 2  &kp ENTER  &kp RIGHT_ALT  &kp CAPSLOCK  &kp DELETE
             >;
         };
 
