@@ -99,7 +99,7 @@
                 <&macro_press>,
                 <&mo 1 &kp F14>,
                 <&macro_release>,
-                <&kp F14>;
+                <&mo 1 &kp F14>;
 
             label = "LAYER1";
         };
@@ -109,9 +109,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 1 &kp F15>,
+                <&mo 2 &kp F15>,
                 <&macro_release>,
-                <&kp F15>;
+                <&mo 2 &kp F15>;
 
             label = "LAYER2";
         };
