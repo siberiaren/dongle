@@ -95,7 +95,8 @@
         layer: layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 1 &kp F14>;
+            bindings = <&macro_press>, <&mo 1 &kp F14>;
+
             label = "LAYER";
         };
 
