@@ -95,16 +95,9 @@
         layer: layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mo 1 &kp F14>;
+            bindings = <&macro_press>, <&mo 1 &kp F14>, <&macro_release>;
 
             label = "LAYER";
-        };
-
-        layer2: layer2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mo 2 &kp F15>;
-            label = "LAYER2";
         };
     };
 };
