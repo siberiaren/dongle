@@ -151,7 +151,7 @@
             bindings = <
 &mt LWIN F1     &kp F2     &kp F3     &kp F4     &kp F5      &kp F6        &kp F7  &kp F8    &kp F9    &kp F10   &kp F11   &mt RWIN F12
 &mt LCTRL PLUS  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT   &circu  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RALT UNDER
-&mt LALT EQUAL  &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)   &kp LEFT_ALT  &kp N6  &kp N7    &kp N8    &kp N9    &kp N0    &mt RALT MINUS
+&mt LALT EQUAL  &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)   &kp LEFT_ALT  &none   &none     &none     &none     &none     &mt RALT MINUS
 &lt 3 TAB       &trans     &trans     &trans     &trans      &lt 3 DEL     &none   &none     &none     &none
             >;
         };
