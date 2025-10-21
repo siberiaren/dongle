@@ -125,7 +125,7 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_9 &kp KP_NUMBER_3>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_4>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
@@ -149,19 +149,19 @@
 
         lower_layer {
             bindings = <
-&mt LWIN F1     &kp F2     &kp F3     &kp F4     &kp F5      &kp F6        &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &mt RWIN F12
-&mt LCTRL PLUS  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT   &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RALT UNDER
-&mt LALT EQUAL  &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)   &kp LEFT_ALT  &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &mt RALT MINUS
-&lt 3 TAB       &trans     &trans     &trans     &trans      &lt 3 DEL     &none      &none     &none     &none
+&mt LWIN F1     &kp F2     &kp F3     &kp F4     &kp F5      &kp F6        &kp F7  &kp F8    &kp F9    &kp F10   &kp F11   &mt RWIN F12
+&mt LCTRL PLUS  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT   &circu  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RALT UNDER
+&mt LALT EQUAL  &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)   &kp LEFT_ALT  &kp N6  &kp N7    &kp N8    &kp N9    &kp N0    &mt RALT MINUS
+&lt 3 TAB       &trans     &trans     &trans     &trans      &lt 3 DEL     &none   &none     &none     &none
             >;
         };
 
         raise_layer {
             bindings = <
-&mt LEFT_GUI KP_NUMLOCK  &kp KP_SLASH     &none           &kp UP          &kp HOME   &kp PAGE_UP    &kp LEFT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET  &kp BACKSLASH
-&mt LCTRL KP_PLUS        &kp PRINTSCREEN  &kp LEFT        &kp DOWN        &kp RIGHT  &kp PAGE_DOWN  &kp SQT               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp LS(MINUS)
-&mt LALT EQUAL           &kp LC(Z)        &kp LC(Y)       &kp LC(C)       &kp LC(V)  &kp END        &kp LS(APOSTROPHE)    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &aspas             &aspas_dupla
-&trans                   &trans           &kp KP_NUMLOCK  &kp LEFT_SHIFT  &trans     &trans         &kp LS(LEFT_BRACKET)  &kp PERIOD       &kp KP_NUMBER_0  &kp LS(APOS)     &bootloader        &none
+&mt LEFT_GUI KP_NUMLOCK  &kp KP_SLASH  &none           &kp UP          &kp HOME   &kp PAGE_UP    &kp LEFT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET  &kp BACKSLASH
+&mt LCTRL KP_PLUS        &none         &kp LEFT        &kp DOWN        &kp RIGHT  &kp PAGE_DOWN  &kp SQT               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp LS(MINUS)
+&mt LALT EQUAL           &kp LC(Z)     &kp LC(Y)       &kp LC(C)       &kp LC(V)  &kp END        &kp LS(APOSTROPHE)    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &aspas             &aspas_dupla
+&trans                   &trans        &kp KP_NUMLOCK  &kp LEFT_SHIFT  &trans     &trans         &kp LS(LEFT_BRACKET)  &kp PERIOD       &kp KP_NUMBER_0  &kp LS(APOS)     &bootloader        &none
             >;
         };
     };
