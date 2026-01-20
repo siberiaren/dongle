@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/portuguese.dtsi"
 
@@ -149,10 +150,10 @@
 
         lower_layer {
             bindings = <
-&mt LWIN F1     &kp F2     &kp F3     &kp F4     &kp F5      &kp F6        &kp F7  &kp F8    &kp F9    &kp F10   &kp F11   &mt RWIN F12
-&mt LCTRL PLUS  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT   &circu  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RALT UNDER
-&mt LALT EQUAL  &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)   &kp LEFT_ALT  &none   &none     &none     &none     &none     &mt RALT MINUS
-&lt 3 TAB       &trans     &trans     &trans     &trans      &lt 3 DEL     &none   &none     &none     &none
+&mt LWIN F1     &kp F2     &kp F3     &kp F4     &kp F5      &kp F6        &kp F7          &kp F8          &kp F9          &kp F10          &kp F11       &mt RWIN F12
+&mt LCTRL PLUS  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT   &circu          &kp AMPS        &mmv MOVE_UP    &kp LPAR         &kp RPAR      &mt RALT UNDER
+&mt LALT EQUAL  &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)   &kp LEFT_ALT  &kp ASTERISK    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP  &mt RALT MINUS
+&lt 3 TAB       &trans     &trans     &trans     &trans      &lt 3 DEL     &msc SCRL_DOWN  &none           &mkp LCLK       &mkp RCLK
             >;
         };
 
