@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/portuguese.dtsi"
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
