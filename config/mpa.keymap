@@ -51,7 +51,21 @@
                 <&kp LALT>;
         };
 
-        interrogacao: new_macro_assc {
+        doispontos: doispontos {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+         bindings =
+           <&macro_press>,
+           <&kp LEFT_ALT>,
+           <&macro_tap>,
+           <&kp KP_NUMBER_5 &kp KP_NUMBER_8>,
+           <&macro_release>,
+           <&kp LEFT_ALT>;
+
+            label = "DOIS_PONTOS";
+         };
+
+       interrogacao: new_macro_assc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -152,7 +166,7 @@
             bindings = <
 &mt LWIN F1     &kp F2     &kp F3     &kp F4     &kp F5      &kp F6        &kp F7          &kp F8          &kp F9          &kp F10          &kp F11       &mt RWIN F12
 &mt LCTRL PLUS  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT   &circu          &kp AMPS        &mmv MOVE_UP    &kp LPAR         &kp RPAR      &mt RALT UNDER
-&mt LALT EQUAL  &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)   &kp LEFT_ALT  &kp ASTERISK    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP  &mt RALT MINUS
+&mt LALT EQUAL  &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)   &kp LEFT_ALT  &kp ASTERISK    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP  &doispontos
 &lt 3 TAB       &trans     &trans     &trans     &trans      &lt 3 DEL     &msc SCRL_DOWN  &none           &mkp LCLK       &mkp RCLK
             >;
         };
