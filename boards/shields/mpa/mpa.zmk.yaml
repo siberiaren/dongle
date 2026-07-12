@@ -6,6 +6,9 @@ url: https://github.com/inpudiy/mpa_shield_module
 requires: [pro_micro]
 features:
   - keys
+  - pointing
+
 siblings:
   - mpa_left
   - mpa_right
+  - mpa_dongle
